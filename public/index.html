@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type = "text/css" href="style.css" />
+    <script src="/angular/angular.js"></script>
+    <script src="angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.2.1/angular-google-maps.min.js"></script>
+    <meta charset="utf-8">
+    <title>Google Maps</title>
+  </head>
+
+  <body ng-app="mapApp">
+    <h3> Google Maps</h3>
+      <div id="map_canvas" >
+
+          <div ng-controller="mapCtrl">
+              <ui-gmap-google-map center="map.center" options="options" zoom="map.zoom">
+                <ui-gmap-marker ng-repeat="m in marker" coords="m.coords" idkey="m.id"></ui-gmap-marker>
+              </ui-gmap-google-map>
+          </div>
+
+      </div>
+  </body>
+
+    <script src="mapApp.js"></script>
+    <script src="mapCtrl.js"></script>
+  </body>
+</html>

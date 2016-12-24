@@ -1,0 +1,15 @@
+{
+  "name": "random",
+  "version": "1.0.0",
+  "description": "",
+  "main": "MergeSort.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-google-maps": "^2.4.0",
+    "express": "^4.14.0"
+  }
+}
